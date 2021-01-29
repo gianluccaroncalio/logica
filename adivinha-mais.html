@@ -1,0 +1,19 @@
+<input type="text" id="numero" />
+<input type="submit" id="adivinhar" value="compare  com o meu segredo!" />
+
+<script type="text/javascript">
+
+	var caixaDoNumero = document.getElementById("numero");
+//	alert (caixaDoNumero.value); --- carregamento antecipado
+
+	var botaoClicado = function() {
+		alert(caixaDoNumero.value);
+	};
+	
+	var botaoAdvinhar = document.getElementById("adivinhar");
+	botaoAdvinhar.onclick = botaoClicado;
+
+
+
+
+</script>

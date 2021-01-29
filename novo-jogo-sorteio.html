@@ -1,0 +1,25 @@
+<script type="text/javascript">
+	var mostra = function(frase) {
+		document.write(frase + "<br>");
+	};
+
+	var numeroPensado = Math.round(Math.random() * 3);
+	var numeroDaTentativa = 1;
+
+	while(numeroDaTentativa <= 3) {
+		var chute = prompt("qual número acha que é?");
+		if (chute == numeroPensado) {
+			mostra("você acertou, era " + numeroPensado);
+		} else {
+			mostra("você errou, era "+ numeroPensado);
+		}
+		numeroDaTentativa++
+	}
+
+
+
+
+
+
+
+</script>

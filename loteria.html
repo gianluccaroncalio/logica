@@ -1,0 +1,43 @@
+<input type="text" id="numero" />
+<input type="submit" id="adivinhar" value="compare com o segredo!" />
+
+<script type="text/javascript">
+	var caixaDoNumero = document.getElementById("numero");
+	var segredos = [1, 3, 5, 7, 9];
+	
+	var botaoClicado = function () {
+		for(var i = 0; i < segredos.length; i = i + 1) {	// conferir mais sobre o uso do [i]
+			if(segredos[i] == caixaDoNumero.value) {
+				alert("parabéns, você acertou!");
+				return;
+			}
+			if(segredos[3] == caixaDoNumero.value) {
+				alert("parabéns, você acertou o número 7!")
+				return;
+			}
+			caixaDoNumero.value = "";
+		}
+		alert("infelizmente, você errou!");
+	};
+
+	// problema no funcionamento do formulário 		// att. era na ordem do increntamento - correção: (i = i + 1)
+	// erro no restante do array, da como errado os outros segredos
+
+
+	var botaoAdivinhar = document.getElementById("adivinhar");
+	botaoAdivinhar.onclick = botaoClicado;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

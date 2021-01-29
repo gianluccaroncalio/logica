@@ -1,0 +1,36 @@
+<input type="text" id="numero" />
+<input type="input" value="adicione e verifique!"
+						id="verificar" />
+
+<script type="text/javascript">
+	var sorteados = [];
+
+	var numero = document.getElementById("numero").value
+
+	var adicionarSorteado = function() {
+		for(var i = 0; i < sorteados.length; i = i + 1) {
+			if(sorteados[i] == numero) {
+				alert("número já sorteado!");
+				return;
+			}
+		}
+		sorteados.push(numero);
+		console.log(sorteados);
+	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
